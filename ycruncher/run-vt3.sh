@@ -5,9 +5,6 @@ set -euo pipefail
 cd -- "$(dirname -- "$0")"
 LOG="../logs/vt3_$(date +%Y%m%d_%H%M).log"
 
-echo $LOG
-# ls "../logs"
-
 ../y-cruncher \
   skip-warnings \
   pause:-2 \
