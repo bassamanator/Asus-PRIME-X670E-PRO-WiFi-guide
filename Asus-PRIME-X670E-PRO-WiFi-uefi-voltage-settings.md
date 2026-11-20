@@ -215,3 +215,41 @@ All of these sit within normal ranges for an EXPO 6000 MT/s configuration.
 5. **Reset if unstable.** Use _Load Optimized Defaults_ in the Exit tab, or the Clear CMOS button on the back I/O panel.
 
 > **Disclaimer:** The ranges above are general guidance for AM5 platforms and can differ between CPU models, BIOS versions, and memory kits. Always check your hardware's official specifications before changing voltages.
+
+# Memory slots
+
+| Board label | dmidecode name    | I2C address | Status |
+| ----------- | ----------------- | ----------- | ------ |
+| DIMM_A1     | Channel A, DIMM 0 | 0x50        | Empty  |
+| **DIMM_A2** | Channel A, DIMM 1 | **0x51**    | 16 GiB |
+| DIMM_B1     | Channel B, DIMM 0 | 0x52        | Empty  |
+| **DIMM_B2** | Channel B, DIMM 1 | **0x53**    | 16 GiB |
+
+![](dimm_slots.png)
+
+```shell
+sudo dmidecode -t memory | grep -E "Locator|Size"
+       Size: No Module Installed
+       Locator: DIMM 0
+       Bank Locator: P0 CHANNEL A
+       ---
+       Size: 16 GiB
+       Locator: DIMM 1
+       Bank Locator: P0 CHANNEL A
+       Non-Volatile Size: None
+       Volatile Size: 16 GiB
+       Cache Size: None
+       Logical Size: None
+       ---
+       Size: No Module Installed
+       Locator: DIMM 0
+       Bank Locator: P0 CHANNEL B
+       ---
+       Size: 16 GiB
+       Locator: DIMM 1
+       Bank Locator: P0 CHANNEL B
+       Non-Volatile Size: None
+       Volatile Size: 16 GiB
+       Cache Size: None
+       Logical Size: None
+```
