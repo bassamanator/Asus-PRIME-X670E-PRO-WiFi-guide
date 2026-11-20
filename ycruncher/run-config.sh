@@ -18,5 +18,6 @@ LOG="../logs/${CONFIG_NAME}_$(date +%Y%m%d_%H%M).log"
   skip-warnings \
   pause:-2 \
   priority:0 \
+  PII:1 \
   logfile:"$LOG" \
   config "$CONFIG"
