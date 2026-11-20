@@ -3,11 +3,14 @@
 set -euo pipefail
 
 cd -- "$(dirname -- "$0")"
-LOG="vt3_$(date +%Y%m%d_%H%M).log"
+LOG="../logs/vt3_$(date +%Y%m%d_%H%M).log"
 
-./y-cruncher \
+echo $LOG
+# ls "../logs"
+
+../y-cruncher \
   skip-warnings \
   pause:-2 \
   priority:0 \
   logfile:"$LOG" \
-  config memtest-deepseek-VT3.cfg
+  config VT3.cfg
