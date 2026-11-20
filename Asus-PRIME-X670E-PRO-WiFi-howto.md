@@ -225,7 +225,7 @@ All of these sit within normal ranges for an EXPO 6000 MT/s configuration.
 | DIMM_B1     | Channel B, DIMM 0 | 0x52        | Empty  |
 | **DIMM_B2** | Channel B, DIMM 1 | **0x53**    | 16 GiB |
 
-![](dimm_slots.png)
+![](.github/images/dimm_slots.png)
 
 ```shell
 sudo dmidecode -t memory | grep -E "Locator|Size"
