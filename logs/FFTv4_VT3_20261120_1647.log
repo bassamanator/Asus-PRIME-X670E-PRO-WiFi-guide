@@ -1,0 +1,187 @@
+
+Checking processor/OS features...
+
+Required Features:
+    x64, ABM, BMI1, BMI2, ADX,
+    SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2,
+    AVX, FMA3, AVX2,
+    AVX512-(F/CD/VL/BW/DQ/IFMA/VBMI/VBMI2/GFNI)
+
+
+
+Reading Hardware Topology...
+
+Logical Cores:
+    0-11
+
+Physical Cores:
+    0-5
+
+NUMA Node 0:
+    0-11
+
+Scheduling Group 0:
+    0-11
+
+
+
+Component Stress Tester
+
+  1   Logical Cores:      12
+  2   Memory:             17.1 GiB  ( 1.43 GiB per thread )
+  3   NUMA Mode:          Local - Memory allocated from local thread.
+  4/5 Time Limit:         180 seconds per test / 14,400 seconds total
+  6   Stop on Error:      Enabled
+
+ 7/8  Enable All Tests / Disable All Tests
+ 9/10 Load/Save Configuration File
+
+  #  Tag   Test Name                   Mem/Thread  Component      CPU------Mem
+ 11  BKT   Basecase + Karatsuba          Disabled  Scalar Integer  -|--------
+ 12  BBP   BBP Digit Extraction          Disabled  AVX512 Float    |---------
+ 13  SFTv4 Small In-Cache FFTv4          Disabled  AVX512 Float    -|--------
+ 14  SNT   Small In-Cache N63            Disabled  AVX512 Integer  --|-------
+ 15  SVT   Small In-Cache VT3            Disabled  AVX512 Integer  --|-------
+ 16  FFTv4 Fast Fourier Transform (v4)    246 MiB  AVX512 Float    ---------|
+ 17  N63   Classic NTT (v2)              Disabled  AVX512 Integer  -----|----
+ 18  VT3   Vector Transform (v3)         1.34 GiB  AVX512 Integer  ------|---
+
+  0   Start Stress-Testing!
+
+
+Allocating Memory...
+  Core   1:  1.34 GiB  node 0 (100%)
+  Core   0:  1.34 GiB  node 0 (100%)
+  Core   3:  1.34 GiB  node 0 (100%)
+  Core   2:  1.34 GiB  node 0 (100%)
+  Core   5:  1.34 GiB  node 0 (100%)
+  Core   4:  1.34 GiB  node 0 (100%)
+  Core   6:  1.34 GiB  node 0 (100%)
+  Core   8:  1.34 GiB  node 0 (100%)
+  Core   7:  1.34 GiB  node 0 (100%)
+  Core   9:  1.34 GiB  node 0 (99%), 18446744073709551614 (0%)
+  Core  10:  1.34 GiB  node 0 (100%)
+  Core  11:  1.34 GiB  node 0 (100%)
+
+Iteration: 0  Total Elapsed Time: 2.076 seconds  ( 0.035 minutes )
+Running FFTv4: Passed  Test Speed:  2.43 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.14 * 10^09  bits / sec
+
+Iteration: 1  Total Elapsed Time: 363.233 seconds  ( 6.054 minutes )
+Running FFTv4: Passed  Test Speed:  2.43 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.07 * 10^09  bits / sec
+
+Iteration: 2  Total Elapsed Time: 724.534 seconds  ( 12.076 minutes )
+Running FFTv4: Passed  Test Speed:  2.38 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.05 * 10^09  bits / sec
+
+Iteration: 3  Total Elapsed Time: 1086.026 seconds  ( 18.100 minutes )
+Running FFTv4: Passed  Test Speed:  2.37 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.01 * 10^09  bits / sec
+
+Iteration: 4  Total Elapsed Time: 1447.311 seconds  ( 24.122 minutes )
+Running FFTv4: Passed  Test Speed:  2.37 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  3.96 * 10^09  bits / sec
+
+Iteration: 5  Total Elapsed Time: 1808.826 seconds  ( 30.147 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.01 * 10^09  bits / sec
+
+Iteration: 6  Total Elapsed Time: 2169.928 seconds  ( 36.165 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.04 * 10^09  bits / sec
+
+Iteration: 7  Total Elapsed Time: 2531.325 seconds  ( 42.189 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.03 * 10^09  bits / sec
+
+Iteration: 8  Total Elapsed Time: 2892.916 seconds  ( 48.215 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.05 * 10^09  bits / sec
+
+Iteration: 9  Total Elapsed Time: 3254.167 seconds  ( 54.236 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.01 * 10^09  bits / sec
+
+Iteration: 10  Total Elapsed Time: 3615.472 seconds  ( 60.258 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.03 * 10^09  bits / sec
+
+Iteration: 11  Total Elapsed Time: 3977.234 seconds  ( 66.287 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.02 * 10^09  bits / sec
+
+Iteration: 12  Total Elapsed Time: 4338.538 seconds  ( 72.309 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.02 * 10^09  bits / sec
+
+Iteration: 13  Total Elapsed Time: 4699.910 seconds  ( 78.332 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.06 * 10^09  bits / sec
+
+Iteration: 14  Total Elapsed Time: 5061.290 seconds  ( 84.355 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.02 * 10^09  bits / sec
+
+Iteration: 15  Total Elapsed Time: 5422.917 seconds  ( 90.382 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.05 * 10^09  bits / sec
+
+Iteration: 16  Total Elapsed Time: 5784.412 seconds  ( 96.407 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  3.84 * 10^09  bits / sec
+
+Iteration: 17  Total Elapsed Time: 6145.707 seconds  ( 102.428 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  3.9 * 10^09  bits / sec
+
+Iteration: 18  Total Elapsed Time: 6507.318 seconds  ( 108.455 minutes )
+Running FFTv4: Passed  Test Speed:  2.37 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  3.84 * 10^09  bits / sec
+
+Iteration: 19  Total Elapsed Time: 6868.789 seconds  ( 114.480 minutes )
+Running FFTv4: Passed  Test Speed:  2.35 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  3.91 * 10^09  bits / sec
+
+Iteration: 20  Total Elapsed Time: 7230.005 seconds  ( 2.008 hours )
+Running FFTv4: Passed  Test Speed:  2.38 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.04 * 10^09  bits / sec
+
+Iteration: 21  Total Elapsed Time: 7591.392 seconds  ( 2.109 hours )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.09 * 10^09  bits / sec
+
+Iteration: 22  Total Elapsed Time: 7953.193 seconds  ( 2.209 hours )
+Running FFTv4: Passed  Test Speed:  2.4 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  3.95 * 10^09  bits / sec
+
+Iteration: 23  Total Elapsed Time: 8315.079 seconds  ( 2.310 hours )
+Running FFTv4: Passed  Test Speed:  2.38 * 10^09  bits / sec
+Running VT3: Passed  Test Speed:  4.05 * 10^09  bits / sec
+
+Iteration: 24  Total Elapsed Time: 8676.237 seconds  ( 2.410 hours )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+
+
+Exception Encountered: ConvolutionFailedException
+
+Coefficient is too large.
+
+
+Error(s) encountered on logical core 3.
+
+
+Error encountered.  Total Elapsed Time: 8676.237 seconds  ( 2.410 hours )
+
+Stopping test...
+
+Running VT3: Failed  Test Speed:  4.06 * 10^09  bits / sec
+Test Finished. Waiting for threads to terminate...
+
+
+Exception Encountered: StressTestFailedException
+
+Stress test failed with 1 error.
+
+
+
