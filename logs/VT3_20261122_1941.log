@@ -1,0 +1,307 @@
+
+Checking processor/OS features...
+
+Required Features:
+    x64, ABM, BMI1, BMI2, ADX,
+    SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2,
+    AVX, FMA3, AVX2,
+    AVX512-(F/CD/VL/BW/DQ/IFMA/VBMI/VBMI2/GFNI)
+
+
+
+Reading Hardware Topology...
+
+Logical Cores:
+    0-11
+
+Physical Cores:
+    0-5
+
+NUMA Node 0:
+    0-11
+
+Scheduling Group 0:
+    0-11
+
+
+
+Component Stress Tester
+
+  1   Logical Cores:      12
+  2   Memory:             17.1 GiB  ( 1.43 GiB per thread )
+  3   NUMA Mode:          Local - Memory allocated from local thread.
+  4/5 Time Limit:         180 seconds per test / 14,400 seconds total
+  6   Stop on Error:      Enabled
+
+ 7/8  Enable All Tests / Disable All Tests
+ 9/10 Load/Save Configuration File
+
+  #  Tag   Test Name                   Mem/Thread  Component      CPU------Mem
+ 11  BKT   Basecase + Karatsuba          Disabled  Scalar Integer  -|--------
+ 12  BBP   BBP Digit Extraction          Disabled  AVX512 Float    |---------
+ 13  SFTv4 Small In-Cache FFTv4          Disabled  AVX512 Float    -|--------
+ 14  SNT   Small In-Cache N63            Disabled  AVX512 Integer  --|-------
+ 15  SVT   Small In-Cache VT3            Disabled  AVX512 Integer  --|-------
+ 16  FFTv4 Fast Fourier Transform (v4)   Disabled  AVX512 Float    ---------|
+ 17  N63   Classic NTT (v2)              Disabled  AVX512 Integer  -----|----
+ 18  VT3   Vector Transform (v3)         1.34 GiB  AVX512 Integer  ------|---
+
+  0   Start Stress-Testing!
+
+
+Allocating Memory...
+  Core   2:  1.34 GiB  node 0 (100%)
+  Core   0:  1.34 GiB  node 0 (100%)
+  Core   1:  1.34 GiB  node 0 (100%)
+  Core   3:  1.34 GiB  node 0 (100%)
+  Core   4:  1.34 GiB  node 0 (100%)
+  Core   5:  1.34 GiB  node 0 (100%)
+  Core   6:  1.34 GiB  node 0 (100%)
+  Core   8:  1.34 GiB  node 0 (100%)
+  Core   9:  1.34 GiB  node 0 (100%)
+  Core  10:  1.34 GiB  node 0 (100%)
+  Core  11:  1.34 GiB  node 0 (100%)
+  Core   7:  1.34 GiB  node 0 (100%)
+
+Iteration: 0  Total Elapsed Time: 1.547 seconds  ( 0.026 minutes )
+Running VT3: Passed  Test Speed:  4.01 * 10^09  bits / sec
+
+Iteration: 1  Total Elapsed Time: 183.124 seconds  ( 3.052 minutes )
+Running VT3: Passed  Test Speed:  4.03 * 10^09  bits / sec
+
+Iteration: 2  Total Elapsed Time: 364.553 seconds  ( 6.076 minutes )
+Running VT3: Passed  Test Speed:  4.03 * 10^09  bits / sec
+
+Iteration: 3  Total Elapsed Time: 545.614 seconds  ( 9.094 minutes )
+Running VT3: Passed  Test Speed:  4.15 * 10^09  bits / sec
+
+Iteration: 4  Total Elapsed Time: 726.910 seconds  ( 12.115 minutes )
+Running VT3: Passed  Test Speed:  4.25 * 10^09  bits / sec
+
+Iteration: 5  Total Elapsed Time: 908.437 seconds  ( 15.141 minutes )
+Running VT3: Passed  Test Speed:  4.23 * 10^09  bits / sec
+
+Iteration: 6  Total Elapsed Time: 1089.468 seconds  ( 18.158 minutes )
+Running VT3: Passed  Test Speed:  3.97 * 10^09  bits / sec
+
+Iteration: 7  Total Elapsed Time: 1270.962 seconds  ( 21.183 minutes )
+Running VT3: Passed  Test Speed:  3.85 * 10^09  bits / sec
+
+Iteration: 8  Total Elapsed Time: 1452.290 seconds  ( 24.205 minutes )
+Running VT3: Passed  Test Speed:  3.98 * 10^09  bits / sec
+
+Iteration: 9  Total Elapsed Time: 1633.792 seconds  ( 27.230 minutes )
+Running VT3: Passed  Test Speed:  3.99 * 10^09  bits / sec
+
+Iteration: 10  Total Elapsed Time: 1814.870 seconds  ( 30.248 minutes )
+Running VT3: Passed  Test Speed:  3.98 * 10^09  bits / sec
+
+Iteration: 11  Total Elapsed Time: 1996.205 seconds  ( 33.270 minutes )
+Running VT3: Passed  Test Speed:  3.96 * 10^09  bits / sec
+
+Iteration: 12  Total Elapsed Time: 2177.530 seconds  ( 36.292 minutes )
+Running VT3: Passed  Test Speed:  3.97 * 10^09  bits / sec
+
+Iteration: 13  Total Elapsed Time: 2358.611 seconds  ( 39.310 minutes )
+Running VT3: Passed  Test Speed:  3.99 * 10^09  bits / sec
+
+Iteration: 14  Total Elapsed Time: 2539.971 seconds  ( 42.333 minutes )
+Running VT3: Passed  Test Speed:  3.97 * 10^09  bits / sec
+
+Iteration: 15  Total Elapsed Time: 2721.484 seconds  ( 45.358 minutes )
+Running VT3: Passed  Test Speed:  4 * 10^09  bits / sec
+
+Iteration: 16  Total Elapsed Time: 2902.538 seconds  ( 48.376 minutes )
+Running VT3: Passed  Test Speed:  3.98 * 10^09  bits / sec
+
+Iteration: 17  Total Elapsed Time: 3083.960 seconds  ( 51.399 minutes )
+Running VT3: Passed  Test Speed:  3.99 * 10^09  bits / sec
+
+Iteration: 18  Total Elapsed Time: 3265.042 seconds  ( 54.417 minutes )
+Running VT3: Passed  Test Speed:  3.98 * 10^09  bits / sec
+
+Iteration: 19  Total Elapsed Time: 3446.468 seconds  ( 57.441 minutes )
+Running VT3: Passed  Test Speed:  3.97 * 10^09  bits / sec
+
+Iteration: 20  Total Elapsed Time: 3627.939 seconds  ( 60.466 minutes )
+Running VT3: Passed  Test Speed:  3.99 * 10^09  bits / sec
+
+Iteration: 21  Total Elapsed Time: 3808.933 seconds  ( 63.482 minutes )
+Running VT3: Passed  Test Speed:  3.99 * 10^09  bits / sec
+
+Iteration: 22  Total Elapsed Time: 3990.294 seconds  ( 66.505 minutes )
+Running VT3: Passed  Test Speed:  3.97 * 10^09  bits / sec
+
+Iteration: 23  Total Elapsed Time: 4171.692 seconds  ( 69.528 minutes )
+Running VT3: Passed  Test Speed:  3.97 * 10^09  bits / sec
+
+Iteration: 24  Total Elapsed Time: 4352.952 seconds  ( 72.549 minutes )
+Running VT3: Passed  Test Speed:  3.97 * 10^09  bits / sec
+
+Iteration: 25  Total Elapsed Time: 4534.081 seconds  ( 75.568 minutes )
+Running VT3: Passed  Test Speed:  4.11 * 10^09  bits / sec
+
+Iteration: 26  Total Elapsed Time: 4715.301 seconds  ( 78.588 minutes )
+Running VT3: Passed  Test Speed:  3.96 * 10^09  bits / sec
+
+Iteration: 27  Total Elapsed Time: 4896.685 seconds  ( 81.611 minutes )
+Running VT3: Passed  Test Speed:  3.98 * 10^09  bits / sec
+
+Iteration: 28  Total Elapsed Time: 5077.908 seconds  ( 84.632 minutes )
+Running VT3: Passed  Test Speed:  3.99 * 10^09  bits / sec
+
+Iteration: 29  Total Elapsed Time: 5258.841 seconds  ( 87.647 minutes )
+Running VT3: Passed  Test Speed:  4.01 * 10^09  bits / sec
+
+Iteration: 30  Total Elapsed Time: 5440.152 seconds  ( 90.669 minutes )
+Running VT3: Passed  Test Speed:  3.99 * 10^09  bits / sec
+
+Iteration: 31  Total Elapsed Time: 5621.339 seconds  ( 93.689 minutes )
+Running VT3: Passed  Test Speed:  4.01 * 10^09  bits / sec
+
+Iteration: 32  Total Elapsed Time: 5802.576 seconds  ( 96.710 minutes )
+Running VT3: Passed  Test Speed:  4.04 * 10^09  bits / sec
+
+Iteration: 33  Total Elapsed Time: 5983.843 seconds  ( 99.731 minutes )
+Running VT3: Passed  Test Speed:  4.04 * 10^09  bits / sec
+
+Iteration: 34  Total Elapsed Time: 6165.244 seconds  ( 102.754 minutes )
+Running VT3: Passed  Test Speed:  4.1 * 10^09  bits / sec
+
+Iteration: 35  Total Elapsed Time: 6346.614 seconds  ( 105.777 minutes )
+Running VT3: Passed  Test Speed:  4.03 * 10^09  bits / sec
+
+Iteration: 36  Total Elapsed Time: 6528.000 seconds  ( 108.800 minutes )
+Running VT3: Passed  Test Speed:  4.02 * 10^09  bits / sec
+
+Iteration: 37  Total Elapsed Time: 6709.049 seconds  ( 111.817 minutes )
+Running VT3: Passed  Test Speed:  4.01 * 10^09  bits / sec
+
+Iteration: 38  Total Elapsed Time: 6890.352 seconds  ( 114.839 minutes )
+Running VT3: Passed  Test Speed:  4.02 * 10^09  bits / sec
+
+Iteration: 39  Total Elapsed Time: 7071.760 seconds  ( 117.863 minutes )
+Running VT3: Passed  Test Speed:  4 * 10^09  bits / sec
+
+Iteration: 40  Total Elapsed Time: 7252.879 seconds  ( 2.015 hours )
+Running VT3: Passed  Test Speed:  4.06 * 10^09  bits / sec
+
+Iteration: 41  Total Elapsed Time: 7434.137 seconds  ( 2.065 hours )
+Running VT3: Passed  Test Speed:  4.02 * 10^09  bits / sec
+
+Iteration: 42  Total Elapsed Time: 7615.057 seconds  ( 2.115 hours )
+Running VT3: Passed  Test Speed:  4.07 * 10^09  bits / sec
+
+Iteration: 43  Total Elapsed Time: 7796.554 seconds  ( 2.166 hours )
+Running VT3: Passed  Test Speed:  3.86 * 10^09  bits / sec
+
+Iteration: 44  Total Elapsed Time: 7978.230 seconds  ( 2.216 hours )
+Running VT3: Passed  Test Speed:  3.86 * 10^09  bits / sec
+
+Iteration: 45  Total Elapsed Time: 8159.159 seconds  ( 2.266 hours )
+Running VT3: Passed  Test Speed:  3.74 * 10^09  bits / sec
+
+Iteration: 46  Total Elapsed Time: 8340.716 seconds  ( 2.317 hours )
+Running VT3: Passed  Test Speed:  3.69 * 10^09  bits / sec
+
+Iteration: 47  Total Elapsed Time: 8522.268 seconds  ( 2.367 hours )
+Running VT3: Passed  Test Speed:  4.06 * 10^09  bits / sec
+
+Iteration: 48  Total Elapsed Time: 8703.279 seconds  ( 2.418 hours )
+Running VT3: Passed  Test Speed:  4.13 * 10^09  bits / sec
+
+Iteration: 49  Total Elapsed Time: 8884.453 seconds  ( 2.468 hours )
+Running VT3: Passed  Test Speed:  4.13 * 10^09  bits / sec
+
+Iteration: 50  Total Elapsed Time: 9065.841 seconds  ( 2.518 hours )
+Running VT3: Passed  Test Speed:  4.14 * 10^09  bits / sec
+
+Iteration: 51  Total Elapsed Time: 9246.827 seconds  ( 2.569 hours )
+Running VT3: Passed  Test Speed:  4.12 * 10^09  bits / sec
+
+Iteration: 52  Total Elapsed Time: 9428.001 seconds  ( 2.619 hours )
+Running VT3: Passed  Test Speed:  4.12 * 10^09  bits / sec
+
+Iteration: 53  Total Elapsed Time: 9609.295 seconds  ( 2.669 hours )
+Running VT3: Passed  Test Speed:  4.12 * 10^09  bits / sec
+
+Iteration: 54  Total Elapsed Time: 9790.565 seconds  ( 2.720 hours )
+Running VT3: Passed  Test Speed:  4.14 * 10^09  bits / sec
+
+Iteration: 55  Total Elapsed Time: 9971.792 seconds  ( 2.770 hours )
+Running VT3: Passed  Test Speed:  4.11 * 10^09  bits / sec
+
+Iteration: 56  Total Elapsed Time: 10153.160 seconds  ( 2.820 hours )
+Running VT3: Passed  Test Speed:  3.88 * 10^09  bits / sec
+
+Iteration: 57  Total Elapsed Time: 10334.798 seconds  ( 2.871 hours )
+Running VT3: Passed  Test Speed:  3.89 * 10^09  bits / sec
+
+Iteration: 58  Total Elapsed Time: 10516.392 seconds  ( 2.921 hours )
+Running VT3: Passed  Test Speed:  3.83 * 10^09  bits / sec
+
+Iteration: 59  Total Elapsed Time: 10697.700 seconds  ( 2.972 hours )
+Running VT3: Passed  Test Speed:  3.73 * 10^09  bits / sec
+
+Iteration: 60  Total Elapsed Time: 10879.070 seconds  ( 3.022 hours )
+Running VT3: Passed  Test Speed:  3.81 * 10^09  bits / sec
+
+Iteration: 61  Total Elapsed Time: 11060.342 seconds  ( 3.072 hours )
+Running VT3: Passed  Test Speed:  3.93 * 10^09  bits / sec
+
+Iteration: 62  Total Elapsed Time: 11241.521 seconds  ( 3.123 hours )
+Running VT3: Passed  Test Speed:  3.99 * 10^09  bits / sec
+
+Iteration: 63  Total Elapsed Time: 11422.565 seconds  ( 3.173 hours )
+Running VT3: Passed  Test Speed:  3.88 * 10^09  bits / sec
+
+Iteration: 64  Total Elapsed Time: 11604.003 seconds  ( 3.223 hours )
+Running VT3: Passed  Test Speed:  3.89 * 10^09  bits / sec
+
+Iteration: 65  Total Elapsed Time: 11785.148 seconds  ( 3.274 hours )
+Running VT3: Passed  Test Speed:  3.86 * 10^09  bits / sec
+
+Iteration: 66  Total Elapsed Time: 11966.485 seconds  ( 3.324 hours )
+Running VT3: Passed  Test Speed:  3.97 * 10^09  bits / sec
+
+Iteration: 67  Total Elapsed Time: 12148.069 seconds  ( 3.374 hours )
+Running VT3: Passed  Test Speed:  3.93 * 10^09  bits / sec
+
+Iteration: 68  Total Elapsed Time: 12329.418 seconds  ( 3.425 hours )
+Running VT3: Passed  Test Speed:  4.02 * 10^09  bits / sec
+
+Iteration: 69  Total Elapsed Time: 12510.322 seconds  ( 3.475 hours )
+Running VT3: Passed  Test Speed:  3.84 * 10^09  bits / sec
+
+Iteration: 70  Total Elapsed Time: 12691.502 seconds  ( 3.525 hours )
+Running VT3: Passed  Test Speed:  3.95 * 10^09  bits / sec
+
+Iteration: 71  Total Elapsed Time: 12872.655 seconds  ( 3.576 hours )
+Running VT3: Passed  Test Speed:  3.89 * 10^09  bits / sec
+
+Iteration: 72  Total Elapsed Time: 13054.146 seconds  ( 3.626 hours )
+Running VT3: Passed  Test Speed:  3.92 * 10^09  bits / sec
+
+Iteration: 73  Total Elapsed Time: 13235.000 seconds  ( 3.676 hours )
+Running VT3: Passed  Test Speed:  3.96 * 10^09  bits / sec
+
+Iteration: 74  Total Elapsed Time: 13416.138 seconds  ( 3.727 hours )
+Running VT3: Passed  Test Speed:  4.03 * 10^09  bits / sec
+
+Iteration: 75  Total Elapsed Time: 13597.615 seconds  ( 3.777 hours )
+Running VT3: Passed  Test Speed:  4.01 * 10^09  bits / sec
+
+Iteration: 76  Total Elapsed Time: 13779.097 seconds  ( 3.828 hours )
+Running VT3: Passed  Test Speed:  4.05 * 10^09  bits / sec
+
+Iteration: 77  Total Elapsed Time: 13960.608 seconds  ( 3.878 hours )
+Running VT3: Passed  Test Speed:  4.06 * 10^09  bits / sec
+
+Iteration: 78  Total Elapsed Time: 14141.952 seconds  ( 3.928 hours )
+Running VT3: Passed  Test Speed:  4.03 * 10^09  bits / sec
+
+Iteration: 79  Total Elapsed Time: 14323.176 seconds  ( 3.979 hours )
+Running VT3: Passed  Test Speed:  3.98 * 10^09  bits / sec
+
+Test Finished. Waiting for threads to terminate...
+
