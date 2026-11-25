@@ -1,0 +1,784 @@
+
+Checking processor/OS features...
+
+Required Features:
+    x64, ABM, BMI1, BMI2, ADX,
+    SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2,
+    AVX, FMA3, AVX2,
+    AVX512-(F/CD/VL/BW/DQ/IFMA/VBMI/VBMI2/GFNI)
+
+
+
+Reading Hardware Topology...
+
+Logical Cores:
+    0-11
+
+Physical Cores:
+    0-5
+
+NUMA Node 0:
+    0-11
+
+Scheduling Group 0:
+    0-11
+
+
+
+Component Stress Tester
+
+  1   Logical Cores:      12
+  2   Memory:             17.1 GiB  ( 1.43 GiB per thread )
+  3   NUMA Mode:          Local - Memory allocated from local thread.
+  4/5 Time Limit:         180 seconds per test / 43,200 seconds total
+  6   Stop on Error:      Enabled
+
+ 7/8  Enable All Tests / Disable All Tests
+ 9/10 Load/Save Configuration File
+
+  #  Tag   Test Name                   Mem/Thread  Component      CPU------Mem
+ 11  BKT   Basecase + Karatsuba          Disabled  Scalar Integer  -|--------
+ 12  BBP   BBP Digit Extraction          Disabled  AVX512 Float    |---------
+ 13  SFTv4 Small In-Cache FFTv4          Disabled  AVX512 Float    -|--------
+ 14  SNT   Small In-Cache N63            Disabled  AVX512 Integer  --|-------
+ 15  SVT   Small In-Cache VT3            Disabled  AVX512 Integer  --|-------
+ 16  FFTv4 Fast Fourier Transform (v4)    246 MiB  AVX512 Float    ---------|
+ 17  N63   Classic NTT (v2)              Disabled  AVX512 Integer  -----|----
+ 18  VT3   Vector Transform (v3)         Disabled  AVX512 Integer  ------|---
+
+  0   Start Stress-Testing!
+
+
+Allocating Memory...
+  Core   3:   246 MiB  node 0 (100%)
+  Core   0:   246 MiB  node 0 (100%)
+  Core   2:   246 MiB  node 0 (100%)
+  Core   4:   246 MiB  node 0 (100%)
+  Core   5:   246 MiB  node 0 (100%)
+  Core   6:   246 MiB  node 0 (100%)
+  Core   7:   246 MiB  node 0 (100%)
+  Core   1:   246 MiB  node 0 (100%)
+  Core   8:   246 MiB  node 0 (100%)
+  Core   9:   246 MiB  node 0 (100%)
+  Core  10:   246 MiB  node 0 (100%)
+  Core  11:   246 MiB  node 0 (100%)
+
+Iteration: 0  Total Elapsed Time: 0.289 seconds  ( 0.005 minutes )
+Running FFTv4: Passed  Test Speed:  2.53 * 10^09  bits / sec
+
+Iteration: 1  Total Elapsed Time: 180.396 seconds  ( 3.007 minutes )
+Running FFTv4: Passed  Test Speed:  2.54 * 10^09  bits / sec
+
+Iteration: 2  Total Elapsed Time: 360.527 seconds  ( 6.009 minutes )
+Running FFTv4: Passed  Test Speed:  2.54 * 10^09  bits / sec
+
+Iteration: 3  Total Elapsed Time: 540.630 seconds  ( 9.010 minutes )
+Running FFTv4: Passed  Test Speed:  2.54 * 10^09  bits / sec
+
+Iteration: 4  Total Elapsed Time: 720.757 seconds  ( 12.013 minutes )
+Running FFTv4: Passed  Test Speed:  2.54 * 10^09  bits / sec
+
+Iteration: 5  Total Elapsed Time: 900.865 seconds  ( 15.014 minutes )
+Running FFTv4: Passed  Test Speed:  2.54 * 10^09  bits / sec
+
+Iteration: 6  Total Elapsed Time: 1080.989 seconds  ( 18.016 minutes )
+Running FFTv4: Passed  Test Speed:  2.54 * 10^09  bits / sec
+
+Iteration: 7  Total Elapsed Time: 1261.105 seconds  ( 21.018 minutes )
+Running FFTv4: Passed  Test Speed:  2.54 * 10^09  bits / sec
+
+Iteration: 8  Total Elapsed Time: 1441.237 seconds  ( 24.021 minutes )
+Running FFTv4: Passed  Test Speed:  2.54 * 10^09  bits / sec
+
+Iteration: 9  Total Elapsed Time: 1621.316 seconds  ( 27.022 minutes )
+Running FFTv4: Passed  Test Speed:  2.54 * 10^09  bits / sec
+
+Iteration: 10  Total Elapsed Time: 1801.448 seconds  ( 30.024 minutes )
+Running FFTv4: Passed  Test Speed:  2.52 * 10^09  bits / sec
+
+Iteration: 11  Total Elapsed Time: 1981.575 seconds  ( 33.026 minutes )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 12  Total Elapsed Time: 2161.700 seconds  ( 36.028 minutes )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 13  Total Elapsed Time: 2341.802 seconds  ( 39.030 minutes )
+Running FFTv4: Passed  Test Speed:  8.76 * 10^08  bits / sec
+
+Iteration: 14  Total Elapsed Time: 2841.875 seconds  ( 47.365 minutes )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 15  Total Elapsed Time: 3021.970 seconds  ( 50.366 minutes )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 16  Total Elapsed Time: 3202.069 seconds  ( 53.368 minutes )
+Running FFTv4: Passed  Test Speed:  2.39 * 10^09  bits / sec
+
+Iteration: 17  Total Elapsed Time: 3382.222 seconds  ( 56.370 minutes )
+Running FFTv4: Passed  Test Speed:  2.41 * 10^09  bits / sec
+
+Iteration: 18  Total Elapsed Time: 3562.343 seconds  ( 59.372 minutes )
+Running FFTv4: Passed  Test Speed:  2.44 * 10^09  bits / sec
+
+Iteration: 19  Total Elapsed Time: 3742.456 seconds  ( 62.374 minutes )
+Running FFTv4: Passed  Test Speed:  2.43 * 10^09  bits / sec
+
+Iteration: 20  Total Elapsed Time: 3922.572 seconds  ( 65.376 minutes )
+Running FFTv4: Passed  Test Speed:  2.44 * 10^09  bits / sec
+
+Iteration: 21  Total Elapsed Time: 4102.718 seconds  ( 68.379 minutes )
+Running FFTv4: Passed  Test Speed:  2.43 * 10^09  bits / sec
+
+Iteration: 22  Total Elapsed Time: 4282.833 seconds  ( 71.381 minutes )
+Running FFTv4: Passed  Test Speed:  2.43 * 10^09  bits / sec
+
+Iteration: 23  Total Elapsed Time: 4462.947 seconds  ( 74.382 minutes )
+Running FFTv4: Passed  Test Speed:  2.44 * 10^09  bits / sec
+
+Iteration: 24  Total Elapsed Time: 4643.095 seconds  ( 77.385 minutes )
+Running FFTv4: Passed  Test Speed:  2.44 * 10^09  bits / sec
+
+Iteration: 25  Total Elapsed Time: 4823.259 seconds  ( 80.388 minutes )
+Running FFTv4: Passed  Test Speed:  2.45 * 10^09  bits / sec
+
+Iteration: 26  Total Elapsed Time: 5003.408 seconds  ( 83.390 minutes )
+Running FFTv4: Passed  Test Speed:  2.45 * 10^09  bits / sec
+
+Iteration: 27  Total Elapsed Time: 5183.546 seconds  ( 86.392 minutes )
+Running FFTv4: Passed  Test Speed:  2.43 * 10^09  bits / sec
+
+Iteration: 28  Total Elapsed Time: 5363.689 seconds  ( 89.395 minutes )
+Running FFTv4: Passed  Test Speed:  2.46 * 10^09  bits / sec
+
+Iteration: 29  Total Elapsed Time: 5543.797 seconds  ( 92.397 minutes )
+Running FFTv4: Passed  Test Speed:  2.46 * 10^09  bits / sec
+
+Iteration: 30  Total Elapsed Time: 5723.936 seconds  ( 95.399 minutes )
+Running FFTv4: Passed  Test Speed:  2.45 * 10^09  bits / sec
+
+Iteration: 31  Total Elapsed Time: 5904.077 seconds  ( 98.401 minutes )
+Running FFTv4: Passed  Test Speed:  2.44 * 10^09  bits / sec
+
+Iteration: 32  Total Elapsed Time: 6084.235 seconds  ( 101.404 minutes )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 33  Total Elapsed Time: 6264.390 seconds  ( 104.407 minutes )
+Running FFTv4: Passed  Test Speed:  2.48 * 10^09  bits / sec
+
+Iteration: 34  Total Elapsed Time: 6444.490 seconds  ( 107.408 minutes )
+Running FFTv4: Passed  Test Speed:  2.48 * 10^09  bits / sec
+
+Iteration: 35  Total Elapsed Time: 6624.606 seconds  ( 110.410 minutes )
+Running FFTv4: Passed  Test Speed:  2.44 * 10^09  bits / sec
+
+Iteration: 36  Total Elapsed Time: 6804.749 seconds  ( 113.412 minutes )
+Running FFTv4: Passed  Test Speed:  2.44 * 10^09  bits / sec
+
+Iteration: 37  Total Elapsed Time: 6984.895 seconds  ( 116.415 minutes )
+Running FFTv4: Passed  Test Speed:  2.45 * 10^09  bits / sec
+
+Iteration: 38  Total Elapsed Time: 7165.016 seconds  ( 119.417 minutes )
+Running FFTv4: Passed  Test Speed:  2.46 * 10^09  bits / sec
+
+Iteration: 39  Total Elapsed Time: 7345.115 seconds  ( 2.040 hours )
+Running FFTv4: Passed  Test Speed:  2.46 * 10^09  bits / sec
+
+Iteration: 40  Total Elapsed Time: 7525.240 seconds  ( 2.090 hours )
+Running FFTv4: Passed  Test Speed:  2.42 * 10^09  bits / sec
+
+Iteration: 41  Total Elapsed Time: 7705.332 seconds  ( 2.140 hours )
+Running FFTv4: Passed  Test Speed:  2.45 * 10^09  bits / sec
+
+Iteration: 42  Total Elapsed Time: 7885.451 seconds  ( 2.190 hours )
+Running FFTv4: Passed  Test Speed:  2.45 * 10^09  bits / sec
+
+Iteration: 43  Total Elapsed Time: 8065.565 seconds  ( 2.240 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 44  Total Elapsed Time: 8245.692 seconds  ( 2.290 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 45  Total Elapsed Time: 8425.828 seconds  ( 2.341 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 46  Total Elapsed Time: 8605.972 seconds  ( 2.391 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 47  Total Elapsed Time: 8786.130 seconds  ( 2.441 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 48  Total Elapsed Time: 8966.249 seconds  ( 2.491 hours )
+Running FFTv4: Passed  Test Speed:  2.45 * 10^09  bits / sec
+
+Iteration: 49  Total Elapsed Time: 9146.372 seconds  ( 2.541 hours )
+Running FFTv4: Passed  Test Speed:  2.45 * 10^09  bits / sec
+
+Iteration: 50  Total Elapsed Time: 9326.533 seconds  ( 2.591 hours )
+Running FFTv4: Passed  Test Speed:  2.45 * 10^09  bits / sec
+
+Iteration: 51  Total Elapsed Time: 9506.635 seconds  ( 2.641 hours )
+Running FFTv4: Passed  Test Speed:  2.45 * 10^09  bits / sec
+
+Iteration: 52  Total Elapsed Time: 9686.769 seconds  ( 2.691 hours )
+Running FFTv4: Passed  Test Speed:  2.48 * 10^09  bits / sec
+
+Iteration: 53  Total Elapsed Time: 9866.873 seconds  ( 2.741 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 54  Total Elapsed Time: 10046.963 seconds  ( 2.791 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 55  Total Elapsed Time: 10227.112 seconds  ( 2.841 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 56  Total Elapsed Time: 10407.242 seconds  ( 2.891 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 57  Total Elapsed Time: 10587.345 seconds  ( 2.941 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 58  Total Elapsed Time: 10767.474 seconds  ( 2.991 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 59  Total Elapsed Time: 10947.608 seconds  ( 3.041 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 60  Total Elapsed Time: 11127.738 seconds  ( 3.091 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 61  Total Elapsed Time: 11307.896 seconds  ( 3.141 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 62  Total Elapsed Time: 11488.036 seconds  ( 3.191 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 63  Total Elapsed Time: 11668.143 seconds  ( 3.241 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 64  Total Elapsed Time: 11848.276 seconds  ( 3.291 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 65  Total Elapsed Time: 12028.404 seconds  ( 3.341 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 66  Total Elapsed Time: 12208.478 seconds  ( 3.391 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 67  Total Elapsed Time: 12388.624 seconds  ( 3.441 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 68  Total Elapsed Time: 12568.775 seconds  ( 3.491 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 69  Total Elapsed Time: 12748.899 seconds  ( 3.541 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 70  Total Elapsed Time: 12929.031 seconds  ( 3.591 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 71  Total Elapsed Time: 13109.151 seconds  ( 3.641 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 72  Total Elapsed Time: 13289.255 seconds  ( 3.691 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 73  Total Elapsed Time: 13469.379 seconds  ( 3.741 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 74  Total Elapsed Time: 13649.511 seconds  ( 3.792 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 75  Total Elapsed Time: 13829.633 seconds  ( 3.842 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 76  Total Elapsed Time: 14009.747 seconds  ( 3.892 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 77  Total Elapsed Time: 14189.866 seconds  ( 3.942 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 78  Total Elapsed Time: 14370.015 seconds  ( 3.992 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 79  Total Elapsed Time: 14550.142 seconds  ( 4.042 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 80  Total Elapsed Time: 14730.266 seconds  ( 4.092 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 81  Total Elapsed Time: 14910.391 seconds  ( 4.142 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 82  Total Elapsed Time: 15090.530 seconds  ( 4.192 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 83  Total Elapsed Time: 15270.659 seconds  ( 4.242 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 84  Total Elapsed Time: 15450.752 seconds  ( 4.292 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 85  Total Elapsed Time: 15630.902 seconds  ( 4.342 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 86  Total Elapsed Time: 15811.046 seconds  ( 4.392 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 87  Total Elapsed Time: 15991.208 seconds  ( 4.442 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 88  Total Elapsed Time: 16171.315 seconds  ( 4.492 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 89  Total Elapsed Time: 16351.428 seconds  ( 4.542 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 90  Total Elapsed Time: 16531.564 seconds  ( 4.592 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 91  Total Elapsed Time: 16711.700 seconds  ( 4.642 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 92  Total Elapsed Time: 16891.788 seconds  ( 4.692 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 93  Total Elapsed Time: 17071.919 seconds  ( 4.742 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 94  Total Elapsed Time: 17252.043 seconds  ( 4.792 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 95  Total Elapsed Time: 17432.181 seconds  ( 4.842 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 96  Total Elapsed Time: 17612.341 seconds  ( 4.892 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 97  Total Elapsed Time: 17792.412 seconds  ( 4.942 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 98  Total Elapsed Time: 17972.525 seconds  ( 4.992 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 99  Total Elapsed Time: 18152.674 seconds  ( 5.042 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 100  Total Elapsed Time: 18332.801 seconds  ( 5.092 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 101  Total Elapsed Time: 18512.968 seconds  ( 5.142 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 102  Total Elapsed Time: 18693.091 seconds  ( 5.193 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 103  Total Elapsed Time: 18873.211 seconds  ( 5.243 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 104  Total Elapsed Time: 19053.338 seconds  ( 5.293 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 105  Total Elapsed Time: 19233.423 seconds  ( 5.343 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 106  Total Elapsed Time: 19413.541 seconds  ( 5.393 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 107  Total Elapsed Time: 19593.644 seconds  ( 5.443 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 108  Total Elapsed Time: 19773.770 seconds  ( 5.493 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 109  Total Elapsed Time: 19953.876 seconds  ( 5.543 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 110  Total Elapsed Time: 20134.059 seconds  ( 5.593 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 111  Total Elapsed Time: 20314.225 seconds  ( 5.643 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 112  Total Elapsed Time: 20494.367 seconds  ( 5.693 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 113  Total Elapsed Time: 20674.513 seconds  ( 5.743 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 114  Total Elapsed Time: 20854.624 seconds  ( 5.793 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 115  Total Elapsed Time: 21034.743 seconds  ( 5.843 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 116  Total Elapsed Time: 21214.844 seconds  ( 5.893 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 117  Total Elapsed Time: 21394.974 seconds  ( 5.943 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 118  Total Elapsed Time: 21575.115 seconds  ( 5.993 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 119  Total Elapsed Time: 21755.243 seconds  ( 6.043 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 120  Total Elapsed Time: 21935.351 seconds  ( 6.093 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 121  Total Elapsed Time: 22115.453 seconds  ( 6.143 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 122  Total Elapsed Time: 22295.560 seconds  ( 6.193 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 123  Total Elapsed Time: 22475.686 seconds  ( 6.243 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 124  Total Elapsed Time: 22655.796 seconds  ( 6.293 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 125  Total Elapsed Time: 22835.901 seconds  ( 6.343 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 126  Total Elapsed Time: 23016.026 seconds  ( 6.393 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 127  Total Elapsed Time: 23196.179 seconds  ( 6.443 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 128  Total Elapsed Time: 23376.310 seconds  ( 6.493 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 129  Total Elapsed Time: 23556.431 seconds  ( 6.543 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 130  Total Elapsed Time: 23736.595 seconds  ( 6.593 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 131  Total Elapsed Time: 23916.718 seconds  ( 6.644 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 132  Total Elapsed Time: 24096.832 seconds  ( 6.694 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 133  Total Elapsed Time: 24276.964 seconds  ( 6.744 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 134  Total Elapsed Time: 24457.089 seconds  ( 6.794 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 135  Total Elapsed Time: 24637.230 seconds  ( 6.844 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 136  Total Elapsed Time: 24817.348 seconds  ( 6.894 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 137  Total Elapsed Time: 24997.459 seconds  ( 6.944 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 138  Total Elapsed Time: 25177.531 seconds  ( 6.994 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 139  Total Elapsed Time: 25357.675 seconds  ( 7.044 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 140  Total Elapsed Time: 25537.827 seconds  ( 7.094 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 141  Total Elapsed Time: 25717.958 seconds  ( 7.144 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 142  Total Elapsed Time: 25898.042 seconds  ( 7.194 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 143  Total Elapsed Time: 26078.187 seconds  ( 7.244 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 144  Total Elapsed Time: 26258.312 seconds  ( 7.294 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 145  Total Elapsed Time: 26438.455 seconds  ( 7.344 hours )
+Running FFTv4: Passed  Test Speed:  2.51 * 10^09  bits / sec
+
+Iteration: 146  Total Elapsed Time: 26618.573 seconds  ( 7.394 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 147  Total Elapsed Time: 26798.685 seconds  ( 7.444 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 148  Total Elapsed Time: 26978.821 seconds  ( 7.494 hours )
+Running FFTv4: Passed  Test Speed:  2.48 * 10^09  bits / sec
+
+Iteration: 149  Total Elapsed Time: 27158.921 seconds  ( 7.544 hours )
+Running FFTv4: Passed  Test Speed:  2.48 * 10^09  bits / sec
+
+Iteration: 150  Total Elapsed Time: 27339.052 seconds  ( 7.594 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 151  Total Elapsed Time: 27519.194 seconds  ( 7.644 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 152  Total Elapsed Time: 27699.306 seconds  ( 7.694 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 153  Total Elapsed Time: 27879.412 seconds  ( 7.744 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 154  Total Elapsed Time: 28059.552 seconds  ( 7.794 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 155  Total Elapsed Time: 28239.708 seconds  ( 7.844 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 156  Total Elapsed Time: 28419.822 seconds  ( 7.894 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 157  Total Elapsed Time: 28599.942 seconds  ( 7.944 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 158  Total Elapsed Time: 28780.109 seconds  ( 7.994 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 159  Total Elapsed Time: 28960.241 seconds  ( 8.045 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 160  Total Elapsed Time: 29140.350 seconds  ( 8.095 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 161  Total Elapsed Time: 29320.495 seconds  ( 8.145 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 162  Total Elapsed Time: 29500.593 seconds  ( 8.195 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 163  Total Elapsed Time: 29680.713 seconds  ( 8.245 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 164  Total Elapsed Time: 29860.833 seconds  ( 8.295 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 165  Total Elapsed Time: 30040.982 seconds  ( 8.345 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 166  Total Elapsed Time: 30221.110 seconds  ( 8.395 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 167  Total Elapsed Time: 30401.230 seconds  ( 8.445 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 168  Total Elapsed Time: 30581.324 seconds  ( 8.495 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 169  Total Elapsed Time: 30761.433 seconds  ( 8.545 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 170  Total Elapsed Time: 30941.568 seconds  ( 8.595 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 171  Total Elapsed Time: 31121.681 seconds  ( 8.645 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 172  Total Elapsed Time: 31301.798 seconds  ( 8.695 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 173  Total Elapsed Time: 31481.923 seconds  ( 8.745 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 174  Total Elapsed Time: 31662.059 seconds  ( 8.795 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 175  Total Elapsed Time: 31842.181 seconds  ( 8.845 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 176  Total Elapsed Time: 32022.316 seconds  ( 8.895 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 177  Total Elapsed Time: 32202.451 seconds  ( 8.945 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 178  Total Elapsed Time: 32382.560 seconds  ( 8.995 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 179  Total Elapsed Time: 32562.640 seconds  ( 9.045 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 180  Total Elapsed Time: 32742.808 seconds  ( 9.095 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 181  Total Elapsed Time: 32922.910 seconds  ( 9.145 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 182  Total Elapsed Time: 33103.018 seconds  ( 9.195 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 183  Total Elapsed Time: 33283.161 seconds  ( 9.245 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 184  Total Elapsed Time: 33463.273 seconds  ( 9.295 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 185  Total Elapsed Time: 33643.387 seconds  ( 9.345 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 186  Total Elapsed Time: 33823.489 seconds  ( 9.395 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 187  Total Elapsed Time: 34003.605 seconds  ( 9.445 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 188  Total Elapsed Time: 34183.743 seconds  ( 9.495 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 189  Total Elapsed Time: 34363.888 seconds  ( 9.546 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 190  Total Elapsed Time: 34543.986 seconds  ( 9.596 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 191  Total Elapsed Time: 34724.080 seconds  ( 9.646 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 192  Total Elapsed Time: 34904.199 seconds  ( 9.696 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 193  Total Elapsed Time: 35084.298 seconds  ( 9.746 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 194  Total Elapsed Time: 35264.432 seconds  ( 9.796 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 195  Total Elapsed Time: 35444.555 seconds  ( 9.846 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 196  Total Elapsed Time: 35624.670 seconds  ( 9.896 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 197  Total Elapsed Time: 35804.810 seconds  ( 9.946 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 198  Total Elapsed Time: 35984.887 seconds  ( 9.996 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 199  Total Elapsed Time: 36165.015 seconds  ( 10.046 hours )
+Running FFTv4: Passed  Test Speed:  2.48 * 10^09  bits / sec
+
+Iteration: 200  Total Elapsed Time: 36345.178 seconds  ( 10.096 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 201  Total Elapsed Time: 36525.312 seconds  ( 10.146 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 202  Total Elapsed Time: 36705.403 seconds  ( 10.196 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 203  Total Elapsed Time: 36885.521 seconds  ( 10.246 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 204  Total Elapsed Time: 37065.623 seconds  ( 10.296 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 205  Total Elapsed Time: 37245.763 seconds  ( 10.346 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 206  Total Elapsed Time: 37425.903 seconds  ( 10.396 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 207  Total Elapsed Time: 37606.086 seconds  ( 10.446 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 208  Total Elapsed Time: 37786.236 seconds  ( 10.496 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 209  Total Elapsed Time: 37966.410 seconds  ( 10.546 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 210  Total Elapsed Time: 38146.559 seconds  ( 10.596 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 211  Total Elapsed Time: 38326.682 seconds  ( 10.646 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 212  Total Elapsed Time: 38506.829 seconds  ( 10.696 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 213  Total Elapsed Time: 38686.978 seconds  ( 10.746 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 214  Total Elapsed Time: 38867.130 seconds  ( 10.796 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 215  Total Elapsed Time: 39047.213 seconds  ( 10.846 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 216  Total Elapsed Time: 39227.304 seconds  ( 10.896 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 217  Total Elapsed Time: 39407.469 seconds  ( 10.947 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 218  Total Elapsed Time: 39587.602 seconds  ( 10.997 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 219  Total Elapsed Time: 39767.713 seconds  ( 11.047 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 220  Total Elapsed Time: 39947.831 seconds  ( 11.097 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 221  Total Elapsed Time: 40127.993 seconds  ( 11.147 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 222  Total Elapsed Time: 40308.074 seconds  ( 11.197 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 223  Total Elapsed Time: 40488.229 seconds  ( 11.247 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 224  Total Elapsed Time: 40668.349 seconds  ( 11.297 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 225  Total Elapsed Time: 40848.471 seconds  ( 11.347 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 226  Total Elapsed Time: 41028.549 seconds  ( 11.397 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 227  Total Elapsed Time: 41208.663 seconds  ( 11.447 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 228  Total Elapsed Time: 41388.786 seconds  ( 11.497 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 229  Total Elapsed Time: 41568.915 seconds  ( 11.547 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 230  Total Elapsed Time: 41749.035 seconds  ( 11.597 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 231  Total Elapsed Time: 41929.168 seconds  ( 11.647 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 232  Total Elapsed Time: 42109.302 seconds  ( 11.697 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 233  Total Elapsed Time: 42289.423 seconds  ( 11.747 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 234  Total Elapsed Time: 42469.557 seconds  ( 11.797 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 235  Total Elapsed Time: 42649.670 seconds  ( 11.847 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 236  Total Elapsed Time: 42829.821 seconds  ( 11.897 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Iteration: 237  Total Elapsed Time: 43009.957 seconds  ( 11.947 hours )
+Running FFTv4: Passed  Test Speed:  2.49 * 10^09  bits / sec
+
+Iteration: 238  Total Elapsed Time: 43190.089 seconds  ( 11.997 hours )
+Running FFTv4: Passed  Test Speed:  2.5 * 10^09  bits / sec
+
+Test Finished. Waiting for threads to terminate...
+
